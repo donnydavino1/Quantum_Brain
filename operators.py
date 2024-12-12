@@ -3,12 +3,12 @@ import numpy as np
 
 pi = np.pi
 
-""" 2x2 Matrices """
+""" 2x2 Product Operators """
 ix, iy, iz = qt.spin_J_set(1 / 2)
 sx, sy, sz = qt.spin_J_set(1 / 2)
 id = qt.identity(2)
 
-""" 4x4 Matrices """
+""" 4x4 Product Operators """
 IDENTITY = qt.tensor(id, id)
 
 Ix = qt.tensor(ix, id)
@@ -32,7 +32,7 @@ IzSy = qt.tensor(iz, sy)
 IzSz = qt.tensor(iz, sz)
 
 
-""" Density Matrix States """
+""" 4x4 Density Matrix States """
 RHO_1000 = (Iz + Sz + 2 * IzSz).unit()
 RHO_0100 = (Iz - Sz - 2 * IzSz).unit()
 RHO_0010 = (-Iz + Sz - 2 * IzSz).unit()
@@ -96,7 +96,16 @@ UJ = qt.Qobj((-1j * np.pi * IzSz)).expm()
 CNOT = Rx_S(np.pi / 2) * UJ * Ry_S(np.pi / 2)
 # cnot_donny = Rx_S(pi / 2) * UJ * Ry_S(pi / 2)
 
+# Hadamard on the first spin. Note that the old version had a global magnitude multiplied to it! Idk why I did that.
+# H_1 = Rx_I(pi) * Ry_I(pi / 2) * 1j * np.sqrt(2)
+H_1 = Rx_I(pi) * Ry_I(pi / 2)
 
+# again, the old version had a multiplier at the end. This ruins the normalization of the rho's.
+# I don't know why I did that. Fixed with the new line.
+# T = qt.Qobj(Rx_I(pi/2) * Ry_I(pi/4) * Rx_I(-pi/2) * np.exp(1j * pi/8))
+T = qt.Qobj(Rx_I(pi/2) * Ry_I(pi/4) * Rx_I(-pi/2))
+
+# t_array = np.array([[1, 0],[]])
 
 """ Product Operators for Tomography """
 # Construct the product operators that correspond to each spectrum. 
@@ -174,14 +183,18 @@ product_operators = product_operators_1 + product_operators_2
 
 def already_exists(op_new, lst):
     for op_old in lst:
-        if np.array_equal(op_new, op_old):
+        if op_new == op_old:
             return True
     return False
 
 
 def check_basis_complete():
     assert (len(product_operators) == 28)
-    all_ops = np.reshape(np.array(product_operators), (len(product_operators) * 2, 4, 4))
+    # arrays = np.array([[op[0].full(), op[1].full()] for op in product_operators])
+    # all_ops = np.reshape(arrays, (len(product_operators) * 2, 4, 4))
+    all_ops = []
+    for op_pair in product_operators:  # collapse into 1D list
+        all_ops += op_pair
     unique_ops = []
     for op_new in all_ops:
         if already_exists(op_new, unique_ops) or already_exists(-op_new, unique_ops):

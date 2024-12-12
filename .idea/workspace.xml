@@ -1,68 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f2d1729-2ed0-4587-af40-3afefea13174" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/QBrain_Donny.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spectra_Calculate/Ultimate_Spectra_Calculator.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spectra_Calculate/operators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spectra_Calculate/theory_clean.ipynb" afterDir="false" />
+    <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Sympy-2spin.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Temporal_Averaging_2_Spin.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3 Spin Density Theory/Sympy-3spin.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3 Spin Density Theory/Temporal_Averaging_3_Spin.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/Hex Code Plotter.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/Plot_Spectrum_ADP.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/Plot_Spectrum_ATP.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/molecule_figure_maker.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/result_figure_maker.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/spectra_test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/tomography_figure_maker.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/Attempt_at_pulse_program_visualizer.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/CHSH_Calculation (2).ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/Fourier_Transform/Fourier_TransformV3_new data.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum Algorithms/Grover's algorithm (1).ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum Algorithms/V2_Deutsch_algorithm.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/1000.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/1000run2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/result_1000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spectra/Spectral_values_predicter.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T1_analysis.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/ZG_T2_analysis.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coeff_groups_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/operators_3spin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plot_dm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomography_helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/QBrain_Donny.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Quantum_Brain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spectra_Calculate/Ultimate_Spectra_Calculator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Spectra/Ultimate_Spectra_Calculator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spectra_Calculate/operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/operators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spectra_Calculate/theory_clean.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/theory_clean.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-        <option value="Jupyter Notebook" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="2pwszDw6t4vFjVeFxVTvsgwuZvz" />
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "donnydavino1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/donnydavino1/Quantum_Brain.git",
+    "accountId": "e851cd0c-48a2-497e-bfb4-4616c7a65a1b"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2q89tGouV3BmAQ6jnrG3fpaNdzp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.operators.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/donny/PycharmProjects/QBrain_Donny/QBrain_Donny/Spectra_Calculate&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\donny\PycharmProjects\QBrain_Donny\QBrain_Donny\Spectra_Calculate" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\donny\PycharmProjects\QBrain_Donny\QBrain_Donny\Spectra_Calculate" />
-    </key>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,25 +87,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5f2d1729-2ed0-4587-af40-3afefea13174" name="Changes" comment="" />
-      <created>1733688732344</created>
+      <changelist id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="" />
+      <created>1734033548414</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1733688732344</updated>
-      <workItem from="1733688744547" duration="18000" />
-      <workItem from="1733688771030" duration="50000" />
-      <workItem from="1733706621852" duration="136000" />
-      <workItem from="1733706781292" duration="27000" />
-      <workItem from="1733942249060" duration="1245000" />
-      <workItem from="1733946103116" duration="8000" />
-      <workItem from="1734023582014" duration="242000" />
+      <updated>1734033548414</updated>
+      <workItem from="1734033556799" duration="333000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/QBrain_Donny$operators.coverage" NAME="operators Coverage Results" MODIFIED="1733942722032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spectra_Calculate" />
   </component>
 </project>
