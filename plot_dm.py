@@ -8,7 +8,7 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 from qutip import Qobj
 
 
-def plot_complex_density_matrix_new(
+def plot_complex_density_matrix(
         dm: Qobj,
         dm_theory: Qobj | None = None,
         many_spin_indexing: list | None = None,

@@ -1,67 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Sympy-2spin.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Temporal_Averaging_2_Spin.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3 Spin Density Theory/Sympy-3spin.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3 Spin Density Theory/Temporal_Averaging_3_Spin.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure Making/Hex Code Plotter.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure Making/Plot_Spectrum_ADP.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure Making/Plot_Spectrum_ATP.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure Making/molecule_figure_maker.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure Making/result_figure_maker.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure Making/spectra_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure Making/tomography_figure_maker.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Other/Attempt_at_pulse_program_visualizer.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Other/CHSH_Calculation (2).ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Other/Fourier_Transform/Fourier_TransformV3_new data.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quantum Algorithms/Grover's algorithm (1).ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quantum Algorithms/V2_Deutsch_algorithm.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/1000.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/1000run2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/result_1000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spectra/Spectral_values_predicter.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T1_analysis.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/ZG_T2_analysis.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coeff_groups_class.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global_constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operators_3spin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plot_dm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomography_helper_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/QBrain_Donny.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Quantum_Brain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/ADP-BRUKER-VIEW.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/ADP-DOUBLET-2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/ADP-DOUBLET-Q1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/ADP-DOUBLET-Q2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figure Making/result_0010_V6.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/0010_V6.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/MIT_Tomography/FT_for_pseudo2D.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/MIT_Tomography/Fourier_TransformV3_mit.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/MIT_Tomography/Pseudo_2D_to_Spectra.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/result_0010_V6.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/result_0010_V6_error.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spectra_Calculate/Ultimate_Spectra_Calculator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Spectra/Ultimate_Spectra_Calculator.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spectra_Calculate/operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/operators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spectra_Calculate/theory_clean.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/theory_clean.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Spin_Density_Theory/theory_clean.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/theory_clean.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figure Making/Plot_Spectrum_ADP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Figure Making/Plot_Spectrum_ADP.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figure Making/result_figure_maker.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Figure Making/result_figure_maker.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figure Making/tomography_figure_maker.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Figure Making/tomography_figure_maker.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Fourier_Transform/Fourier_TransformV3_new data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Fourier_Transform/Fourier_TransformV3_new data.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/1000.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Quantum_Tomography/1000.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/1000run2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/result_1000" beforeDir="false" afterPath="$PROJECT_DIR$/Quantum_Tomography/result_1000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spectra/Ultimate_Spectra_Calculator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Spectra/Ultimate_Spectra_Calculator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/ZG_T2_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/ZG_T2_analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_dm.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_dm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "donnydavino1"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;donnydavino1&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/donnydavino1/Quantum_Brain.git",
-    "accountId": "e851cd0c-48a2-497e-bfb4-4616c7a65a1b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/donnydavino1/Quantum_Brain.git&quot;,
+    &quot;accountId&quot;: &quot;e851cd0c-48a2-497e-bfb4-4616c7a65a1b&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2q89tGouV3BmAQ6jnrG3fpaNdzp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -72,10 +70,20 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/donny/Documents/GitHub/Quantum_Brain/Quantum_Tomography/MIT_Tomography",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Quantum_Tomography\MIT_Tomography" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,6 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734033548414</updated>
       <workItem from="1734033556799" duration="333000" />
+      <workItem from="1734121165081" duration="26457000" />
     </task>
     <servers />
   </component>
