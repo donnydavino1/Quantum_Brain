@@ -1,5 +1,3 @@
-"""My own version of PULSEE's plot dm function. Modified from PULSEE for Qbrain publication figures"""
-
 import matplotlib.colors
 import matplotlib.pyplot as plt
 import numpy as np
@@ -7,7 +5,9 @@ from matplotlib import colorbar as clrbar, colors as clrs
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 from qutip import Qobj
 
+""" My own version of PULSEE's plot dm function. Modified from PULSEE for Qbrain publication figures """
 
+# I can't use `fig.tight_layout()`. Seems to be incompatible with what I'm doing.
 def plot_complex_density_matrix(
         dm: Qobj,
         dm_theory: Qobj | None = None,
@@ -15,14 +15,14 @@ def plot_complex_density_matrix(
         show: bool = True,
         phase_limits: list | np.ndarray | None = None,
         show_legend: bool = True,
-        fig_dpi: int = 400,
+        fig_dpi: int = 800,
         save_to: str = "",
         fig_size: tuple[float, float] | None = None,
-        label_size: int = 6,
+        label_size: int = 16,
         label_qubit: bool = True,
         view_angle: tuple[float] = (45, -15),
         zlim: tuple[float, float] | None = None,
-        add_shade = True
+        add_shade= False
 ) -> tuple[plt.Figure, plt.Axes]:
     """
     Generates a 3D histogram displaying the amplitude and phase (with colors)
@@ -106,8 +106,9 @@ def plot_complex_density_matrix(
     if many_spin_indexing is None:
         many_spin_indexing = dm.dims[0]
 
-    assert np.array_equal(np.array(dm), dm.full())
-    dm = np.array(dm)
+    #assert np.array_equal(np.array(dm), dm.full())
+    #dm = np.array(dm)
+    dm=dm.full()
     n = dm.size
 
     # Set width of the vertical bars
@@ -151,8 +152,6 @@ def plot_complex_density_matrix(
     # Adjust the z tick label locations to they line up better with the ticks
     ax.tick_params('z', pad=0)
 
-
-
     # plot bars
     bars = ax.bar3d(xpos, ypos, zpos, dx, dy, dz, color=colors, shade=add_shade, alpha=1, zsort='min')
     if not add_shade:
@@ -161,7 +160,6 @@ def plot_complex_density_matrix(
 
     if dm_theory is not None:
         plot_dm_theory(ax, dm_theory, dx, dy, xpos, ypos, zpos)
-
 
     ax.view_init(elev=view_angle[0], azim=view_angle[1])  # rotating the plot so the "diagonal" direction is more clear
 
@@ -270,9 +268,10 @@ def label_qubit_indices(ax: plt.Axes, label_size: float, xpos, ypos):
 
     ax.set_xticks(xpos, labels=labels, fontsize=label_size, va='bottom')
     ax.set_yticks(ypos, labels=labels, fontsize=label_size)
-    ax.tick_params(axis='x', pad=10, color=(0,0,0,0))
-    ax.tick_params(axis='y', pad=-3, color=(0,0,0,0))
+    ax.tick_params(axis='x', pad=10, color=(0, 0, 0, 0))
+    ax.tick_params(axis='y', pad=-3, color=(0, 0, 0, 0))
     ax.tick_params(axis='z', direction='in', pad=0)
+
 
 def label_qubit_indices_noline(ax: plt.Axes, label_size: float, xpos, ypos):
     # convert the 16 coordinates into 4
@@ -298,8 +297,9 @@ def label_qubit_indices_noline(ax: plt.Axes, label_size: float, xpos, ypos):
     ax.yaxis.line.set_color((1.0, 1.0, 1.0, 0.0))  # Make axis line invisible
 
 
-
 """ Helper only used for plotting the theoretical density matrix outline """
+
+
 def generate_box_faces(x, y, z, dx, dy, dz):
     """Generates the six faces of a 3D box for given dimensions."""
     return [
