@@ -122,8 +122,8 @@ def plot_complex_density_matrix(
     zpos = np.zeros(n)
 
     # make small numbers real, to avoid random colors
-    idx, = np.where(abs(dm_data) < 0.001)
-    dm_data[idx] = abs(dm_data[idx])
+    #idx, = np.where(abs(dm_data) < 0.001)
+    #dm_data[idx] = abs(dm_data[idx])
 
     if phase_limits:  # check that limits is a list type
         phase_min = phase_limits[0]

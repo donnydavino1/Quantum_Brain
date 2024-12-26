@@ -4,59 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Data_visualizing/POPT_visualizer.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_visualizing/Pseudo_2D_1readout_visualizer.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0001CNP/0001CNP_ns1_52.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/Deutsch_Balanced_ns1_195.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/Deutsch_Constant_ns1_209.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/Deutsch_Identity_ns1_268.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/Deutsch_Zigzag_ns1_282.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/result_DI_error.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/result_zigzag.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/result_zigzag_error.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/giant_ns4.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/try_to_work_with_new_data_set.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/MIT_Tomography/Fourier_TransformV3_mit.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/MIT_Tomography/dummy.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quantum Algorithms/V2_Deutsch_algorithm_0010input.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/2024_12_23/Phase_44.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/2024_12_23/Phase_48.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quantum_Tomography/2024_12_23/Phase_decouple.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spectra_Theory/Ultimate_Spectra_Calculator.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_189.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_190.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_191.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_194.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temporal_average.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="New files, especially for QT and understanding phase cycling">
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CNP/0001CNP_ns1_331.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/QT_ns4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/ns4_array.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter 1/Sympy-2spin.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/V2_Deutsch_algorithm.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_Spin_Density_Theory/Temporal_Averaging_2_Spin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Temporal_Averaging_2_Spin.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_Spin_Density_Theory/theory_clean.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/theory_clean.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/ADP-BRUKER-VIEW.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/ADP-BRUKER-VIEW.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/ADP-DOUBLET-2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/ADP-DOUBLET-Q1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/ADP-DOUBLET-Q2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/Hex Code Plotter.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/Hex Code Plotter.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/Plot_Spectrum_ADP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/Plot_Spectrum_ADP.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/Plot_Spectrum_ATP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/Plot_Spectrum_ATP.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/molecule_figure_maker.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/molecule_figure_maker.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/result_0010_V6.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/result_0010_V6.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/result_figure_maker.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/result_figure_maker.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/spectra_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/spectra_test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure Making/tomography_figure_maker.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/tomography_figure_maker.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quantum Algorithms/V2_Deutsch_algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Quantum Algorithms/V2_Deutsch_algorithm.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/0010_V6.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/1000.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/MIT_Tomography/FT_for_pseudo2D.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/MIT_Tomography/Fourier_TransformV3_mit.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/MIT_Tomography/Pseudo_2D_to_Spectra.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/result_0010_V6.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/result_DB.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/result_0010_V6_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/result_DB_error.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quantum_Tomography/result_1000" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/result_DI.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spectra/Spectral_values_predicter.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Spectra_Theory/Spectral_values_predicter.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spectra/Ultimate_Spectra_Calculator.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Spin_Density_Theory/Sympy-2spin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Sympy-2spin.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_visualizing/Pseudo_2D_1readout_visualizer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data_visualizing/Pseudo_2D_1readout_visualizer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0001CNP/0001CNP_ns1_52.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0001CNP/0001CNP_ns1_52.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/giant_ns4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/Plot_Phase.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_dm.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_dm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/donny/Documents/GitHub/Quantum_Brain/MIT_Data/2024_12_23-24/Large_ns4",
+    "last_opened_file_path": "C:/Users/donny/Documents/GitHub/Quantum_Brain/MIT_Data/2024_12_17-18/0001CNP",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,18 +72,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_17-18\0001CNP" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\Large_ns4" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\Deutsch" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Thesis_Figure_Making" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\0001CNP" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Paper_Figure_Making\Chapter_6" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\2_Spin_Density_Theory" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Paper_Figure_Making\Chapter 1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Paper_Figure_Making\Chapter 1" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\Large_ns4" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Quantum_Tomography\2024_12_23" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Data_visualizing" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -155,8 +113,28 @@
       <workItem from="1734911354191" duration="15304000" />
       <workItem from="1734997067933" duration="1166000" />
       <workItem from="1735002143382" duration="14461000" />
-      <workItem from="1735083909933" duration="9396000" />
+      <workItem from="1735083909933" duration="10867000" />
+      <workItem from="1735240779364" duration="1397000" />
+      <workItem from="1735242201539" duration="5500000" />
+      <workItem from="1735252668306" duration="1255000" />
     </task>
+    <task id="LOCAL-00001" summary="New files, especially for QT and understanding phase cycling">
+      <option name="closed" value="true" />
+      <created>1735093835220</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735093835220</updated>
+    </task>
+    <task id="LOCAL-00002" summary="New files, especially for QT and understanding phase cycling">
+      <option name="closed" value="true" />
+      <created>1735093852851</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735093852851</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,5 +142,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="New files, especially for QT and understanding phase cycling" />
+    <option name="LAST_COMMIT_MESSAGE" value="New files, especially for QT and understanding phase cycling" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook://C:/Users/donny/Documents/GitHub/Quantum_Brain/Paper_Figure_Making/Chapter_6/V2_Deutsch_algorithm.ipynb</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
