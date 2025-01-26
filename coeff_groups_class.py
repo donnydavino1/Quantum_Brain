@@ -34,7 +34,7 @@ class CoefficientGroups:
                 return
         self.data.append([operator, (c, atom)])
 
-    def reconstruct_rho(self, abs_trace=True, positive_diag=False) -> qt.Qobj:
+    def reconstruct_rho(self, abs_trace=True, positive_diag=False, add_identity=False) -> qt.Qobj:
         """
         Given a 'coefficient groups', construct a density matrix.
         Could play around setting abs_trace to True/False and seeing which gives
@@ -47,10 +47,10 @@ class CoefficientGroups:
             coefficients = [c for (c, atom) in group[1:]]
             # TODO: implement error propagation
             rho += group[0] * np.mean(coefficients)
-        rho = clean_dm(rho, abs_trace=abs_trace, positive_diag=positive_diag)
+        rho = clean_dm(rho, abs_trace=abs_trace, positive_diag=positive_diag, add_identity=add_identity)
         return qt.Qobj(rho)
 
-    def get_error(self, abs_trace=True, positive_diag=False) -> qt.Qobj:
+    def get_error(self, abs_trace=True, positive_diag=False, add_identity=False) -> qt.Qobj:
         groups_averaged = []
         for group in self.data:
             coefficients = [c for (c, atom) in group[1:]]
@@ -82,7 +82,7 @@ class CoefficientGroups:
         rho_reconst = self.reconstruct_rho()
         rho_vals, rho_error = qt.Qobj(rho_vals, dims=rho_reconst.dims), qt.Qobj(rho_error, dims=rho_reconst.dims)
         rho_cleaned, error_cleaned = clean_dm(rho_vals, abs_trace=abs_trace, errors=rho_error,
-                                              positive_diag=positive_diag)
+                                              positive_diag=positive_diag, add_identity=add_identity)
         assert np.array_equal(rho_cleaned, rho_reconst)
 
         return error_cleaned
@@ -92,15 +92,48 @@ def clean_dm(
         rho: qt.Qobj,
         abs_trace: bool = False,
         errors: qt.Qobj = None,
-        positive_diag: bool = False
+        positive_diag: bool = False,
+        add_identity: bool = True,
 ) -> qt.Qobj | tuple[qt.Qobj, qt.Qobj]:
     """
-    Removes the "tail" of the density matrix in the diagonal elements.
-    Note that this function "normalizes" rho
-    Default of abs_trace is False for backwards compatibility (in the old notebook files
-     where I used to call clean_dm directly in the notebook instead of inside helper functions).
-    But all other calls of clean_dm should have abs_trace set to True (since I think
-    it's a better normalization method for a density matrix, since it forces the sum of the diagonal to be 1).
+    The final processing step to 'clean up' the density matrix (rho) from tomography.
+    The behavior of this function varies widely depending on the value of the parameters,
+    so pay careful attention to their values.
+
+    The cleanup process is tricky since the resulting density matrix from tomography contains negative values
+    in the diagonal and the trace is always 0, which obviously should not be true for a real density matrix.
+    (This is because the tomography's basis product operators all have trace 0)
+
+    2024 December: Added the option "add_identity" (which was always True previously). If this is set to false,
+    it does not add any identity to the density matrix (and thus doesn't try to get rid of the tail).
+    This is useful when I'm trying to compare the raw measured density matrix from the tomography to the theoretical
+    density matrix with a tail.
+    :param rho:
+        The density matrix to clean.
+    :param abs_trace:
+        Divides the diagonal by the "absolute trace". I've defined the "absolute trace" as the sum of the absolute of the diagonal elements.
+        Allows the negative values in the diagonal.
+        Additionally, adds identity to the diagonal depending on the `add_identity` parameter (further details in the `add_identity` docstring).
+
+        Usually set to True, and this is the 'default' behavior of this function. However, the default value of the
+        parameter is set to False for backwards compatibility (in the old notebook files where I used to call
+        clean_dm directly in the notebook instead of inside helper functions).
+    :param errors:
+        The error matrix, where each element represents the error on the corresponding element of rho.
+        If `errors` is provided, does proper error propagation then return a tuple (rho, errors).
+    :param positive_diag:
+        If True, forces all the diagonal elements to be non-negative by subtracting the most negative diagonal
+        element to all the diagonal elements.
+        Since all diagonal elements are non-negative, we no longer have to worry about trace vs absolute trace,
+        and can reliably use regular trace for normalization.
+    :param add_identity:
+        Only relevant if `abs_trace` is True. This value was always True by default in the past.
+        If `add_identity` is True the value (identity / 6) (*this value should be re-examined?*) then
+        re-normalizes by the trace (NOT the absolute trace!).
+        Perhaps should experiment with normalizing with absolute trace here instead?
+    :return:
+        the processed rho density matrix Qobj.
+        If the `errors` matrix is provided, returns a tuple of Qobj's instead: (rho, errors).
     """
     # newly implemented method: make the diagonal non-negative first
     if positive_diag:
@@ -119,11 +152,19 @@ def clean_dm(
     elif abs_trace:  # makes the trace = 1
         abs_diag_sum = np.sum(np.abs(rho.diag()))
         rho_reduced = rho / abs_diag_sum
-        rho_no_tail = rho_reduced + op.IDENTITY / 6
-        final_multiplier = 1 / np.sum(rho_no_tail.diag())  # force the sum of the diagonal to be 1
+        error_multiplier = 1 / abs_diag_sum
+
+        # In the past, this was always True. Now I'm adding a feature where I can turn this off so
+        # I can make measured & theoretical matrices without identities added to them.
+        if add_identity:
+            rho_reduced = rho_reduced + op.IDENTITY / 6
+            # force the sum of the diagonal to be 1 again
+            rho_reduced = rho_reduced / np.sum(rho_reduced.diag())
+            error_multiplier = error_multiplier / np.sum(rho_reduced.diag())
+
         if errors is None:
-            return rho_no_tail * final_multiplier
-        return rho_no_tail * final_multiplier, errors / abs_diag_sum * final_multiplier
+            return rho_reduced
+        return rho_reduced, errors * error_multiplier
 
     else:  # uses qutip's ".unit()" function (specifics are complicated)
         if errors is None:

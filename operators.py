@@ -96,6 +96,8 @@ UJ = qt.Qobj((-1j * np.pi * IzSz)).expm()
 CNOT = Rx_S(np.pi / 2) * UJ * Ry_S(np.pi / 2)
 # cnot_donny = Rx_S(pi / 2) * UJ * Ry_S(pi / 2)
 
+CNOT_Phased = Rz_I(np.pi / 2) * Rz_S(-np.pi / 2) * CNOT
+
 # Hadamard on the first spin. Note that the old version had a global magnitude multiplied to it! Idk why I did that.
 # H_1 = Rx_I(pi) * Ry_I(pi / 2) * 1j * np.sqrt(2)
 H_1 = Rx_I(pi) * Ry_I(pi / 2)

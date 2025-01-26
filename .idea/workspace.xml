@@ -4,32 +4,78 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="Added Thesis figure making files, and other small changes">
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/1000/1000_ns1_63.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/Thermal_24s_ns1_254.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/Thermal_24s_ns1_254_modified.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/result_Thermal_24s_ns1_254.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/result_Thermal_24s_ns1_254_error.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/result_1000_ns1_63.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/result_1000_ns1_63_error.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-BRUKER-DOUBLET_of_triplets.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-BRUKER-VIEW-Hydogen-zoomed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-BRUKER-VIEW-Hydrogen-wide.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-BRUKER-VIEW.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-DOUBLET-2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-DOUBLET-Q1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-DOUBLET-Q2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-Hard-doublet.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/Hard_Pulse.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/Hard_Pulse_Hydrogen.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/POPT_visualizer_D7.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/POPT_visualizer_soft_pulse_calibratopn.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/Soft_Pulse.ipynb" afterDir="false" />
+    <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="Analyzing more data">
+      <change afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Entanglement.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Error_simulations.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/General_simulations.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CN/0001CN_ns1_77.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CNP/0001CNP_ns1_330.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/0010CN_ns1_147.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CNP/0010CNP_ns1_316.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CNP/0010CNP_ns4_16.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CNP/result_0010CNP_ns1_316.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CNP/result_0010CNP_ns4_16.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0100/1000_ns1_63.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/1000/result_1000_ns1_63.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/1000/result_1000_ns1_63_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Bell/0001BPA_155.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Bell/0001BPA_225.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Bell/0100_ns1_63.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Bell/1000BPA_ns1_66.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Bell/Bell_LLS.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0001CNP/0001CNP_ns1_175.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0001CNP/0001CNP_ns1_94.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0010CNP/0010CNP_ns1_30.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/result_DC.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/result_DC_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/result_large_ns4_0001_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/ATP-DOUBLETS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/ATP-TRIPLET.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_2/BPP_Theory.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_2/FID_figure.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_4/basis_density_matrix.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/1000_ns1_63.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/J_couple_evolve.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/result_0100_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/Old/ZG_T2_analysis.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/operators_3spin_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/Plot_Phase.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/Plot_Phase.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter 1/Sympy-2spin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_1/Sympy-2spin.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Plot_Spectrum_ADP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/Plot_Spectrum_ADP.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Spin_Density_Theory/Sympy-2spin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Sympy-2spin.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Spin_Density_Theory/theory_clean.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/theory_clean.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3 Spin Density Theory/Sympy-3spin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/3 Spin Density Theory/Sympy-3spin.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3 Spin Density Theory/Temporal_Averaging_3_Spin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/3 Spin Density Theory/Temporal_Averaging_3_Spin.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CNP/0001CNP_ns1_331.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CNP/result_0001CNP_ns1_52.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/result_0100.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CNP/result_0001CNP_ns1_52_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0100/result_0100_error.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/1000/1000_ns1_63.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/1000/1000_ns1_63.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/Thermal_24s_ns1_254.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/Thermal_24s_ns1_254.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/result_Thermal_24s_ns1_254.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/result_Thermal_24s_ns1_254.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/result_Thermal_24s_ns1_254_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Thermal/result_Thermal_24s_ns1_254_error.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0001CNP/0001CNP_ns1_52.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0001CNP/0001CNP_ns1_52.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0001CNP/result_0001CNP_ns1_52.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/result_large_ns4_0001.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0001CNP/result_0001CNP_ns1_52_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CNP/result_0010CNP_ns1_316_error.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/Deutsch_Constant_ns1_209.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/Deutsch_Constant_ns1_209.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/Deutsch_Zigzag_ns1_282.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Deutsch/Deutsch_Zigzag_ns1_282.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/QT_ns4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CNP/0001CN.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/ns4_array.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/ns4_array.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/result_0001CNP_ns1_52.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0100/result_0100.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/Large_ns4/result_0001CNP_ns1_52_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CNP/result_0010CNP_ns4_16_error.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/result_1000_ns1_63.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0100/result_1000_ns1_63.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/result_1000_ns1_63_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0100/result_1000_ns1_63_error.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_1/Sympy-2spin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_1/Sympy-2spin.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Plot_Spectrum_ATP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/Plot_Spectrum_ATP.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/molecule_figure_maker.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/molecule_figure_maker.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spectra_Theory/Ultimate_Spectra_Calculator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Spectra_Theory/Ultimate_Spectra_Calculator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T1_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T1_analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_189.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_189.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_190.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_191.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_194.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/ZG_T2_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/CPMG_T2_192.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coeff_groups_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/coeff_groups_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/operators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temporal_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/temporal_average.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +85,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="Jupyter Notebook" />
       </list>
     </option>
@@ -69,35 +116,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/donny/Documents/GitHub/Quantum_Brain/Paper_Figure_Making/Chapter_3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.temporal_average.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/donny/Documents/GitHub/Quantum_Brain/MIT_Data/2024_12_17-18/0001CN",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Paper_Figure_Making\Chapter_3" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_17-18\0001CNP" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\Large_ns4" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_17-18\0001CN" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_17-18\0010CN" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\0010CNP" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_17-18\Bell" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Paper_Figure_Making\Chapter_6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\T1_and_T2_Analysis\Old" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\0001CNP" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_17-18\0001CNP" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Fourier_Transform" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_17-18\1000" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Paper_Figure_Making\Chapter_3" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Paper_Figure_Making\Chapter 1" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\Large_ns4" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -133,7 +181,15 @@
       <workItem from="1735252668306" duration="21990000" />
       <workItem from="1735510353010" duration="4826000" />
       <workItem from="1735660418050" duration="647000" />
-      <workItem from="1735661254165" duration="2573000" />
+      <workItem from="1735661254165" duration="17243000" />
+      <workItem from="1735688247671" duration="20496000" />
+      <workItem from="1735875882495" duration="32046000" />
+      <workItem from="1736096709046" duration="30088000" />
+      <workItem from="1736443417772" duration="43802000" />
+      <workItem from="1736892250504" duration="667000" />
+      <workItem from="1737140491419" duration="3845000" />
+      <workItem from="1737480296150" duration="6864000" />
+      <workItem from="1737660750200" duration="28070000" />
     </task>
     <task id="LOCAL-00001" summary="New files, especially for QT and understanding phase cycling">
       <option name="closed" value="true" />
@@ -167,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735254927389</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Analyzing more data">
+      <option name="closed" value="true" />
+      <created>1735668947063</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735668947064</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +241,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="New files, especially for QT and understanding phase cycling" />
     <MESSAGE value="Added Thesis figure making files, and other small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Thesis figure making files, and other small changes" />
+    <MESSAGE value="Analyzing more data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Analyzing more data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -194,5 +259,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Quantum_Brain$temporal_average.coverage" NAME="temporal_average Coverage Results" MODIFIED="1735670235132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
