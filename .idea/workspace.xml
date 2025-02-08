@@ -4,52 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="Extra Code for thesis">
-      <change afterPath="$PROJECT_DIR$/Data_visualizing/Pseudo_2D_1readout_visualizer0001.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_visualizing/Pseudo_2D_1readout_visualizer0001CNP.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CN/result_0001CN_ns1_77.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CN/result_0001CN_ns1_77_error.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147_error.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0010CNP/result_0010CNP_ns1_30.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/0010CNP/result_0010CNP_ns1_30_error.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/1000BPA/result_1000BPA_ns1_66.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/1000BPA/result_1000BPA_ns1_66_error.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_2/BPP_TheoryV2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/Q1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/Q1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/Q2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/LLS_State.ipynb" afterDir="false" />
+    <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="Adding Bruker Code Files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_Spin_Density_Theory/General_simulations.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/General_simulations.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_Spin_Density_Theory/Sympy-2spin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2_Spin_Density_Theory/Sympy-2spin.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Bell/1000BPA_ns1_66.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_23-24/1000BPA/1000BPA_ns1_66.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_1/Sympy-2spin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_1/Sympy-2spin.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_2/BPP_Theory.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_2/BPP_Theory.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_2/FID_figure.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_2/FID_figure.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-BRUKER-DOUBLET_of_triplets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/ADP-BRUKER-DOUBLET_of_triplets.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-BRUKER-VIEW-Hydogen-zoomed.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/ADP-BRUKER-VIEW-Hydogen-zoomed.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-BRUKER-VIEW-Hydrogen-wide.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/ADP-BRUKER-VIEW-Hydrogen-wide.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-BRUKER-VIEW.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/ADP-BRUKER-VIEW.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-DOUBLET-2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/ADP-DOUBLET-2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-DOUBLET-Q1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-DOUBLET-Q2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/ADP-Hard-doublet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/ADP-Hard-doublet.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/Hard_Pulse.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/Hard_Pulse.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/Hard_Pulse_Hydrogen.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/Hard_Pulse_Hydrogen.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/POPT_visualizer_D7.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/POPT_visualizer_D7.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/POPT_visualizer_soft_pulse_calibratopn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/POPT_visualizer_soft_pulse_calibratopn.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/Plot_Spectrum_ADP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/Plot_Spectrum_ADP.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_3/Soft_Pulse.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/Soft_Pulse.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_4/basis_density_matrix.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_4/basis_density_matrix.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/1000_ns1_63.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/1000_ns1_63.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/J_couple_evolve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/J_couple_evolve.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/V2_Deutsch_algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/V2_Deutsch_algorithm.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/result_0100.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/result_0100.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/Chapter_6/result_0100_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/result_0100_error.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/molecule_figure_maker.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/molecule_figure_maker.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,22 +46,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.temporal_average.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/donny/Documents/GitHub/Quantum_Brain/Thesis_Figure_Making/Chapter_6",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.temporal_average.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/donny/Documents/GitHub/Quantum_Brain/Thesis_Figure_Making/Chapter_6&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Thesis_Figure_Making\Chapter_6" />
@@ -169,6 +125,8 @@
       <workItem from="1738430785707" duration="3873000" />
       <workItem from="1738602772834" duration="7051000" />
       <workItem from="1738884740622" duration="2465000" />
+      <workItem from="1739050335580" duration="295000" />
+      <workItem from="1739050643319" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="New files, especially for QT and understanding phase cycling">
       <option name="closed" value="true" />
@@ -218,7 +176,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737896465501</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding Bruker Code Files">
+      <option name="closed" value="true" />
+      <created>1739050480857</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739050480857</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding Bruker Code Files">
+      <option name="closed" value="true" />
+      <created>1739050556772</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739050556772</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +204,8 @@
     <MESSAGE value="Added Thesis figure making files, and other small changes" />
     <MESSAGE value="Analyzing more data" />
     <MESSAGE value="Extra Code for thesis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extra Code for thesis" />
+    <MESSAGE value="Adding Bruker Code Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Bruker Code Files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
