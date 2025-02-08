@@ -1,0 +1,37 @@
+;selzgig_customY1d7ph31
+;selective excitation using a shaped pulse
+;with power-gated decoupling
+;$DIM=1D
+
+;This produces 2IySz
+
+#include <Avance.incl>
+#include <Delay.incl>
+
+
+1 ze
+  10u pl3:f3
+2 d1
+  100m cpd2:f3
+  p1:sp1:f1 ph1
+  d7
+  go=2 ph31
+  30m wr #0 do:f3
+  10u
+exit
+
+
+ph0=0
+ph1=1
+ph2=2
+ph3=3
+ph31=3
+
+
+
+;pl3: f3 channel - power level for CPD/BB decoupling
+;sp1: f1 channel - shaped pulse
+;p1: f1 channel -  90 (or 270) degree shaped pulse
+;d1 : relaxation delay; 1-5 * T1
+;cpd2: decoupling according to sequence defined by cpdprg2
+;set O1 on resonance on the multiplet to be excited or use spoffs

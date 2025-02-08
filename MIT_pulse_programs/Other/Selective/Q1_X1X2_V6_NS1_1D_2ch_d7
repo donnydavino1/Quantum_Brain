@@ -1,0 +1,56 @@
+;the conventions is 31P at 242.9506997 MHz |control bit>, 31P 242.9516488MHz |target bit)>
+;Phases are normally specified by 0 (X; 0°), 1 (Y; 90°), 2 (-X; 180°), 3 (-Y, 270°)
+;p1 is 90 on nuclei for channel F1 (P -450Hz), p2 is 90 on nuclei for channel F2 (P -1450Hz). p3 is 180 on nuclei for channel F1 (P -450Hz), p4 is 180 on nuclei for channel F2(P -1450Hz).
+;with current power setting (W=0.0031623), and (spnam0=Gaus1.1000,1.59), p31_2=2769.000 usec for a 90 pulse
+
+#include <Avance.incl>
+
+"acqt0=-p1*2/3.1416"
+"d9=10" ;d9 is the 5*T1=30
+"d11=50m" ;d11: delay for disk I/O   [30 msec recommended] will do 50ms to give a little extra time
+"d2=1m" ;time to set power
+"d3=10m" ;time to turn on composite pulse decoupling
+
+1 ze
+d3 pl1:f1
+d3 pl12:f3
+2 d9
+
+;turn on composite pulse decoupling
+  d3 cpd3:f3
+  (p1:sp1 ph0):f1 
+  (p2:sp2 ph0):f2
+  d7
+  go=2 ph31
+  d11 wr #0 
+  30u do:f3
+
+exit
+
+
+
+ph0 =0
+ph1 =1
+ph2 =2
+ph3 =3
+ph4 =0
+ph31=3
+
+ph8 =1
+ph9 =1
+ph10=0
+ph11=0
+
+ph12=1
+ph13=0
+ph14=1
+ph15=0
+
+ 
+;Acquire NS scans of sequence 1 (running through the phase cycle) and store the FID, then acquire NS scans of sequence 2 (again running through the phase cycle) and store the FID, repeat through all the sequence variations.
+
+;go=2 acquires the FID, then increments the phase cycle points and loops back to line 2 for NS scans.
+;There are other pulse program commands related to go= that acquire the FID but dont necessarily loop back to a line in the sequence and/or dont necessarily increment the phase cycle pointers.
+;wr #0 stores the FID to the current position in the ser file
+;if #0 increments to the next position in the ser file
+;iu0 increments the loop counter l0  (thats L0&)

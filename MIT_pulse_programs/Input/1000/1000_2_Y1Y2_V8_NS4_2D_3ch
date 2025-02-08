@@ -1,0 +1,110 @@
+;Q2 version (p1<->p2, sp1<->sp2, f1<->f2 are swapped from Q1 version)
+
+;the conventions is 31P at lower absolute frequency is |control bit>, and higher absolute frequency is |target bit)>
+;phases are normally specified by 0 (X; 0°), 1 (Y; 90°), 2 (-X; 180°), 3 (-Y, 270°)
+;p1 is 90 on nuclei for channel F1, p2 is 90 on nuclei for channel F2. p3 is 180 on nuclei for channel F1, p4 is 180 on nuclei for channel F2.
+;td1 is number of FID dimensions, should be 3 but it seems this number must be even integer 
+
+;THE CODE RUNS AS FOLLOWS:
+;Acquire NS scans of sequence 1 (running through the phase cycle) and store the FID, then acquire NS scans of sequence 2 (again running through the phase cycle) and store the FID, repeat through all the sequence variations.
+;go=2 acquires the FID, then increments the phase cycle points and loops back to line 2 for NS scans.
+;wr #0 stores the FID to the current position in the ser file
+;if #0 increments to the next position in the ser file
+;iu0 increments the loop counter l0
+;d9 is the 5*T1=30
+
+#include <Avance.incl>
+
+"acqt0=-p1*2/3.1416"
+"d1=5m" ;short wait time before pulses are applied
+"d2=1m" ;time to set power
+"d3=10m" ;time to turn on composite pulse decoupling
+"d11=30m" ;d11: delay for disk I/O   [30 msec recommended]
+
+1 ze
+d2 pl12:f3
+2 d1
+
+
+if "l0 == 1"
+     {
+  d9
+;turn on composite pulse decoupling
+  d3 cpd3:f3
+;Create Rho_10 (U0 is unitary so do not need to apply any additional pulses onto Rho_10)
+  d1
+;Readout
+  (p2:sp2 ph1):f2 ;90 degree readout (Y pulse)
+  (p1:sp1 ph1):f1 ;90 degree readout (Y pulse)
+     }
+
+if "l0 == 2"
+     {
+  d9
+;turn on composite pulse decoupling
+  d3 cpd3:f3
+;Create Rho_1 (Apply U2 onto Rho_10)
+  d1
+;Create U1 from Knill read backwards (this is correct as Jiwoo calculates it)
+  (p1:sp1 ph8):f1
+  d7
+  (p2:sp2 ph9):f2
+  (p1:sp1 ph10):f1
+  d7
+  (p2:sp2 ph11):f2
+;Readout
+  (p2:sp2 ph1):f2 ;90 degree readout (Y pulse)
+  (p1:sp1 ph1):f1 ;90 degree readout (Y pulse)
+     }
+
+if "l0 == 3"
+     {
+  d9
+;turn on composite pulse decoupling
+  d3 cpd3:f3
+;Create Rho_2. (Apply U2 onto Rho_10)
+  d1
+;Create U2 from Knill read backwards (this is correct as Jiwoo calculates it)
+  (p2:sp2 ph12):f2
+  d7
+  (p2:sp2 ph13):f2
+  (p1:sp1 ph14):f1
+  d7
+  (p1:sp1 ph15):f1
+;Readout
+  (p2:sp2 ph1):f2 ;90 degree readout (Y pulse)
+  (p1:sp1 ph1):f1 ;90 degree readout (Y pulse)
+     }
+
+if "l0 == 4"
+     {
+;empty set to allow correct dimensions of pseudo-2D experiment without looping back and wasting time
+d1
+     }
+
+  go=2 ph31
+  d11 wr #0 if #0 iu0 do:f3
+  lo to 1 times td1 
+  10u do:f3 ;repeat command to turn of decoupler just to be safe
+
+exit
+
+
+ph0 =0 1 2 3  
+ph1 =1 2 3 0
+ph2 =2 3 1 0
+ph3 =3 0 1 2
+ph4 =0 1 2 3
+ph31=3 0 1 2
+
+ph8 =1 2 3 0
+ph9 =1 2 3 0
+ph10=0 1 2 3
+ph11=0 1 2 3
+
+ph12=1 2 3 0
+ph13=0 1 2 3
+ph14=1 2 3 0
+ph15=0 1 2 3
+
+
