@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="Adding Bruker Code Files" />
+    <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="Adding Bruker Code Files">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_8_2025_4_45_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_8_2025_4_45_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/0010CN_ns1_147.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/0010CN_ns1_147.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147_error.pickle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,25 +49,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.temporal_average.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/donny/Documents/GitHub/Quantum_Brain/Thesis_Figure_Making/Chapter_6",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.temporal_average.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/donny/Documents/GitHub/Quantum_Brain/Thesis_Figure_Making/Chapter_6&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": []
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Thesis_Figure_Making\Chapter_6" />
