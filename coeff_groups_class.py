@@ -159,6 +159,7 @@ def clean_dm(
         if add_identity:
             rho_reduced = rho_reduced + op.IDENTITY / 6
             # force the sum of the diagonal to be 1 again
+
             rho_reduced = rho_reduced / np.sum(rho_reduced.diag())
             error_multiplier = error_multiplier / np.sum(rho_reduced.diag())
 

@@ -5,10 +5,631 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="Adding Bruker Code Files">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_8_2025_4_45_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_8_2025_4_45_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/0010CN_ns1_147.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/0010CN_ns1_147.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0010CN/result_0010CN_ns1_147_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q2-wide.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_2/Seperability_Calcultions.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_4/1000_ns1_63.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_4/Identity_Figure.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_4/result_1000_ns1_63.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_4/result_1000_ns1_63_error.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_8_2025_4_45_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_8_2025_4_45_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_visualizing/POPT_visualizer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data_visualizing/POPT_visualizer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/ADP-DOUBLET-Q2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paper_Figure_Making/molecule_figure_maker.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Paper_Figure_Making/molecule_figure_maker.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Bruker/cpmg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Bruker/t1ir" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Bruker/zg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0001CNOT_Phased/0001CNP_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0010CNOT_Phased/0010CNP_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/0100CNOT_Phased/0100CNP_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Phased/1000CNOT_Phased/1000CNP_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0001CNOT/0001CN_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0010CNOT/0010CN_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/0100CNOT/0100CN_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/CNOT_Unphased/1000CNOT/1000CN_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Balanced/DB_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Constant/DC_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/Iden/DI_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Deutsch/zigzag/Zigzag_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0001H/0001H_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0010H/0010H_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/0100H/0100H_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/H/1000H/1000H_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0001HT/0001HT_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0010HT/0010HT_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/0100HT/0100HT_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/HT/1000HT/1000HT_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0001/0001_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0010/0010_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/0100/0100_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Input/1000/1000_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/00BPA_1_X1_V8_NS4_2D_3chvd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0001BPA_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0010CNP_2_1_V8_4AVE_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/0010CNP_2_1_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/1000_1_X1_V8_NS4_1D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/ADP_X1X2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/ADP_X1X2v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/ADP__PC_V6_NS4_2D_part2only" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Q1_X1X2_V6_NS1_1D_1ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Q1_X1X2_V6_NS1_1D_1ch_d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Q1_X1X2_V6_NS1_1D_1ch_d8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Q1_X1X2_V6_NS1_1D_1ch_stupid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Q1_X1X2_V6_NS1_1D_2ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Q1_X1X2_V6_NS1_1D_2ch_d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Q1_X1X2_V6_NS1_1D_2ch_d7_X1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Q1_X1_V6_NS1_1D_2ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Q2_X1X2_V6_NS1_1D_2ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Selective180ph31V2_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SelectiveX1X2ph31V2_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SelectiveX1X2ph31V3_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SelectiveX1_d7_ph31V2_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SelectiveX1_d7_ph31V3_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SelectiveX1ph31V2_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SelectiveX1ph31V3_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SelectiveY1_d7_ph31V3_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Selective_9_X1ph31V2_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Selective_Z_cal_first2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Selective_Z_cal_read.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Selective_Z_cal_read2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Selective_Z_cal_read3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Selective_Z_cal_read4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Selective_Z_calibration.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/Selective_Zw180_calibration.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/SingletE_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/T2_custom_vd_hard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgigX1X2.bab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_X1X2_1ch_ph31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_X1X2_1ch_ph31_NS4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_X1X2_3chan.bab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_X1_1ch_ph31_NS4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_X2_1ch_ph31_NS4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_Y1Y2_3chan.bab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_custom45calibration.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX1X1ph31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX1X2ph31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX1X2ph31V2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX1d7ph31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX1ph31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX1ph31V2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX1ph31V2_ns4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX2X1ph31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX2X2ph31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customX2ph31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customY1d7ph31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_customZ_calibration.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_part2TA_3chan.bab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_read_it.bab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Selective/selzgig_vd.bab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_1_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_1_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_1_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_1_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X1X2_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X1X2_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X1X2_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X1X2_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X1_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X1_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X1_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X1_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X2_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X2_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X2_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_X2_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y1Y2_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y1Y2_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y1Y2_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y1Y2_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y1_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y1_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y1_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y1_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y2_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y2_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y2_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_1_Y2_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_1_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_1_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_1_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_1_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X1X2_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X1X2_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X1X2_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X1X2_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X1_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X1_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X1_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X1_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X2_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X2_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X2_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_X2_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y1Y2_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y1Y2_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y1Y2_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y1Y2_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y1_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y1_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y1_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y1_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y2_V8_ph0_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y2_V8_ph1_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y2_V8_ph2_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Other/Self_phase/0010CNP_2_Y2_V8_ph3_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_Unphased/1000Bell/1000B_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001ALTBell_Phased/0001BPA_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0001Bell_Phased/0001BP_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0010Bell_Phased/0010BP_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/0100Bell_Phased/0100BP_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000ALTBell_Phased/1000BPA_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Pseudo_Bell_phased/1000Bell_Phased/1000BP_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Singlet_evolve/SingletE_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_1_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_1_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_1_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_1_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_1_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_1_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_1_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_2_1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_2_X1X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_2_X1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_2_X2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_2_Y1Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_2_Y1_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulse_Programs/Thermal/Thermal_2_Y2_V8_NS4_2D_3ch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_189.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_189.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/POPT_visualizer_soft_pulse_calibratopn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/POPT_visualizer_soft_pulse_calibratopn.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/1000_ns1_63.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/1000_ns1_63.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/V2_Deutsch_algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/V2_Deutsch_algorithm.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coeff_groups_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/coeff_groups_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/operators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomography_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tomography_helper_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +659,9 @@
     &quot;accountId&quot;: &quot;e851cd0c-48a2-497e-bfb4-4616c7a65a1b&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -56,7 +680,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/donny/Documents/GitHub/Quantum_Brain/Thesis_Figure_Making/Chapter_6&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/donny/Documents/GitHub/Quantum_Brain/Thesis_Figure_Making/Chapter_2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -70,18 +694,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Thesis_Figure_Making\Chapter_2" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Thesis_Figure_Making\Chapter_4" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Thesis_Figure_Making\Chapter_6" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\1000BPA" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Paper_Figure_Making\Chapter_2" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Data_visualizing" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_17-18\0001CN" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24\1000BPA" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2024_12_23-24" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Thesis_Figure_Making\Chapter_2" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\Thesis_Figure_Making" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\T1_and_T2_Analysis\Old" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -133,6 +757,15 @@
       <workItem from="1738884740622" duration="2465000" />
       <workItem from="1739050335580" duration="295000" />
       <workItem from="1739050643319" duration="343000" />
+      <workItem from="1739067034157" duration="225000" />
+      <workItem from="1739111603755" duration="5317000" />
+      <workItem from="1739142645458" duration="1090000" />
+      <workItem from="1739212692948" duration="7362000" />
+      <workItem from="1739374653433" duration="8440000" />
+      <workItem from="1739547389500" duration="5420000" />
+      <workItem from="1739647128715" duration="3056000" />
+      <workItem from="1739829134467" duration="3807000" />
+      <workItem from="1739883160374" duration="4196000" />
     </task>
     <task id="LOCAL-00001" summary="New files, especially for QT and understanding phase cycling">
       <option name="closed" value="true" />
@@ -206,7 +839,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739051304590</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding Bruker Code Files">
+      <option name="closed" value="true" />
+      <created>1739067112812</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739067112812</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +874,11 @@
           <url>notebook://C:/Users/donny/Documents/GitHub/Quantum_Brain/Paper_Figure_Making/Chapter_3/POPT_visualizer_D7.ipynb</url>
           <line>6</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook://C:/Users/donny/Documents/GitHub/Quantum_Brain/Thesis_Figure_Making/Chapter_2/Seperability_Calcultions.ipynb</url>
+          <line>106</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -44,6 +44,11 @@ CLEAN_0100 = (RHO_0100 + IDENTITY / 6).unit()
 CLEAN_0010 = (RHO_0010 + IDENTITY / 6).unit()
 CLEAN_0001 = (RHO_0001 + IDENTITY / 6).unit()
 
+# Donny's normalized by hands versions of the above
+RHO_1000_normalized = (1/2*Iz + 1/2*Sz + 1*IzSz)
+CLEAN_1000_normalized = (1/2*Iz + 1/2*Sz + 1*IzSz+1/4*IDENTITY)
+Thermal_normalized = (1/2*Iz + 1/2*Sz+1/4*IDENTITY)
+
 """ Operators """
 # Rotation Operators
 
@@ -92,6 +97,8 @@ def U_J(t, J):
 
 # J coupling with wait time t = 1/(2J). Levitt pg 398
 UJ = qt.Qobj((-1j * np.pi * IzSz)).expm()
+
+CNOT_Unphased = Rx_S(np.pi / 2) * UJ * Ry_S(np.pi / 2)
 
 CNOT = Rx_S(np.pi / 2) * UJ * Ry_S(np.pi / 2)
 # cnot_donny = Rx_S(pi / 2) * UJ * Ry_S(pi / 2)

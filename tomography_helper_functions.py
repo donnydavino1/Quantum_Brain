@@ -1,18 +1,15 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import qutip as qt
-from qutip import Qobj
 from numpy.typing import NDArray
+from qutip import Qobj
 from scipy import integrate
 from scipy.optimize import curve_fit
 
 import operators as op
-from coeff_groups_class import CoefficientGroups
+from coeff_groups_class import CoefficientGroups, clean_dm
+
 
 """ PULSEE imports """
-from matplotlib import colorbar as clrbar, colors as clrs
-import matplotlib.colors
-from fractions import Fraction
 
 
 def plot_spectra_together(freqs, data, names, xlims, l_freq, r_freq, int_width=None, share_y=False):
@@ -31,17 +28,20 @@ def plot_spectra_together(freqs, data, names, xlims, l_freq, r_freq, int_width=N
         ix = i % 2
         iy = i // 2
         ax = axs[iy, ix]
-        ax.plot(freqs[i_L: i_R + 1], data[i][i_L: i_R + 1])
         ax.grid(alpha=0.5)
         ax.set_title(names[i])
-        # x label just for the bottom 2 plots
-        if i >= len(names) - 2:
-            ax.set(xlabel='Offset Freq (Hz)')
+        ax.set(xlabel='Offset Freq (Hz)')
+        ax.label_outer()
         ax.tick_params(direction='in')
+        ax.axhline(y=0, color='black', alpha=0.5, linewidth=0.5)
 
+        ax.scatter(freqs[i_L: i_R + 1], data[i][i_L: i_R + 1])
+
+        # red centers
         ax.axvline(l_freq, color='r', alpha=0.5)
         ax.axvline(r_freq, color='r', alpha=0.5)
 
+        # integration width
         if int_width is not None:
             ax.axvspan(l_freq - int_width / 2, l_freq + int_width / 2, color='orange', alpha=0.5)
             ax.axvspan(r_freq - int_width / 2, r_freq + int_width / 2, color='orange', alpha=0.5)
@@ -67,8 +67,13 @@ def integrate_simpson(freqs: NDArray,
                       p2_offset: float = 0,
                       use_abs_trace: bool = True,
                       return_error: bool = False,
-                      positive_diag: bool = False
-) -> Qobj:
+                      positive_diag: bool = False,
+                      add_identity: bool = True,
+                      j_offset: float = 0,
+                      ) -> Qobj:
+    # newly added: adjust the J-coupling spacing by `j_offset`.
+    p1_freqs = (p1_freqs[0] - j_offset / 2, p1_freqs[1] + j_offset / 2)
+    p2_freqs = (p2_freqs[0] - j_offset / 2, p2_freqs[1] + j_offset / 2)
 
     freq_spacing = float(freqs[-1] - freqs[0]) / (len(freqs) - 1)
     p1_L_left_idx = np.abs(freqs - (p1_freqs[0] - int_width / 2 + p1_offset)).argmin()
@@ -98,9 +103,11 @@ def integrate_simpson(freqs: NDArray,
         # print(f"Spectrum {thermal_col_names[i]} L+R is: {(L+R):.1e}, L-R is {(L-R):.1e}")
 
     if return_error:
-        return coeff_groups_simpson.get_error()
+        return coeff_groups_simpson.get_error(abs_trace=use_abs_trace, positive_diag=positive_diag,
+                                              add_identity=add_identity)
 
-    rho_simpson = coeff_groups_simpson.reconstruct_rho(abs_trace=use_abs_trace, positive_diag=positive_diag)
+    rho_simpson = coeff_groups_simpson.reconstruct_rho(abs_trace=use_abs_trace, positive_diag=positive_diag,
+                                                       add_identity=add_identity)
     return rho_simpson
 
 
@@ -110,65 +117,80 @@ def integrate_optimized(
         p1_freqs: tuple[int],
         p2_freqs: tuple[int],
         rho_theory: Qobj,
-        p1_range: NDArray = np.arange(-5, 6, 1),
-        p2_range: NDArray = np.arange(-5, 6, 1),
+        p1_range: NDArray = np.linspace(-1, 1, 21),
+        p2_range: NDArray = np.linspace(-1, 1, 21),
         width_range: NDArray = np.arange(1, 11, 1),
         use_abs_trace: bool = True,
         return_error: bool = False,
         positive_diag: bool = False,
-        projection: str = "fortunato"):
-
+        projection: str = "fortunato",
+        add_identity: bool = True,
+        j_offset_range: NDArray | None = None,
+        try_adding_neg: bool = False):
     best_projection = 0
-    best_offsets = tuple()
-    best_int_width = 0
-    best_rho_simpson = 0
+    best_rho = None
+    best_params = {"offsets": None, "width": None, "j_offset": None}
+
+    if j_offset_range is None:
+        j_offset_range = np.array([0])
 
     for p1_offset in p1_range:
         for p2_offset in p2_range:
             for int_width in width_range:
-                curr_rho_simpson = integrate_simpson(freqs, all_spectra, p1_freqs, p2_freqs, int_width, p1_offset,
-                                                     p2_offset, use_abs_trace, positive_diag=positive_diag)
-                # try minimizing the negatives in the diagonal, and check if it gives us better fidelity.
-                curr_rho_zeroed = zero_negatives(curr_rho_simpson)
+                for j_offset in j_offset_range:
+                    rho_raw = integrate_simpson(freqs, all_spectra, p1_freqs, p2_freqs, int_width, p1_offset,
+                                                p2_offset, use_abs_trace, positive_diag=positive_diag,
+                                                add_identity=add_identity, j_offset=j_offset)
 
-                for curr_rho in [curr_rho_simpson, curr_rho_zeroed]:
-                    if projection == "fortunato":
-                        curr_projection = projection_fortunato(curr_rho, rho_theory)
-                        assert np.imag(curr_projection) < 1e-6, f"Imaginary part of projection too large! {curr_projection}"
-                        curr_projection = np.real(curr_projection)
-                    else:  # "jozsa"
-                        curr_projection = projection_2(curr_rho, rho_theory)
-                        assert np.imag(curr_projection) < 1e-6, f"Imaginary part of projection too large! {curr_projection}"
-                        curr_projection = np.real(curr_projection)
+                    if positive_diag and try_adding_neg:
+                        raise ValueError("Both positive_diag and negative_diag are True, which shouldn't be the case")
 
-                    if curr_projection > best_projection:
-                        best_offsets = (p1_offset, p2_offset)
-                        best_int_width = int_width
-                        best_projection = curr_projection
-                        best_rho_simpson = curr_rho
+                    if try_adding_neg:
+                        assert not positive_diag
+                        rhos = [rho_raw, add_neg_avg(rho_raw), clean_dm(rho_raw, positive_diag=True)]
+                    else:
+                        rhos = [rho_raw]
 
+                    for curr_rho in rhos:
+                        if projection == "fortunato":
+                            curr_projection = projection_fortunato(curr_rho, rho_theory)
+                            assert np.imag(
+                                curr_projection) < 1e-6, f"Imaginary part of projection too large! {curr_projection}"
+                            curr_projection = np.real(curr_projection)
+                        elif projection == "jozsa":
+                            curr_projection = projection_jozsa(curr_rho, rho_theory)
+                            assert np.imag(
+                                curr_projection) < 1e-6, f"Imaginary part of projection too large! {curr_projection}"
+                            curr_projection = np.real(curr_projection)
+                        else:
+                            raise ValueError("projection must be 'fortunato' or 'jozsa'")
 
+                        if curr_projection > best_projection:
+                            best_rho = curr_rho
+                            best_projection = curr_projection
+                            best_params["offsets"] = (p1_offset, p2_offset)
+                            best_params["width"] = int_width
+                            best_params["j_offset"] = j_offset
 
-    # usually return here
+    # no error matrix
     if not return_error:
-        return best_rho_simpson, best_projection, best_offsets, best_int_width
+        return best_rho, best_projection, best_params
 
     # for error propagation: note the argument `return_error=True`.
-    rho_error = integrate_simpson(freqs, all_spectra, p1_freqs, p2_freqs, best_int_width, best_offsets[0],
-                                  best_offsets[1], use_abs_trace, return_error=True, positive_diag=positive_diag)
-    return best_rho_simpson, best_projection, best_offsets, best_int_width, rho_error
+    rho_error = integrate_simpson(freqs, all_spectra, p1_freqs, p2_freqs, best_params["width"],
+                                  best_params["offsets"][0], best_params["offsets"][1], use_abs_trace,
+                                  return_error=True, positive_diag=positive_diag)
+    return best_rho, best_projection, best_params, rho_error
 
 
-def zero_negatives(rho: Qobj) -> Qobj:
+def add_neg_avg(rho: Qobj) -> Qobj:
     negatives = [elem for elem in rho.diag() if elem < 0]
     neg_avg = np.mean(negatives)
     rho_new = rho - op.IDENTITY * neg_avg
-    return normalize_diag(rho_new)
+    # re-normalize using the "absolute trace" method
+    return clean_dm(rho_new, abs_trace=True, add_identity=False)
 
-
-def normalize_diag(rho: Qobj) -> Qobj:
-    diag_sum = np.sum(rho.diag())
-    return rho / diag_sum
+""" Projection Functions """
 
 
 def projection_fortunato(rho1: Qobj, rho2: Qobj) -> float:
@@ -177,23 +199,88 @@ def projection_fortunato(rho1: Qobj, rho2: Qobj) -> float:
     return (rho1 * rho2).tr() / np.sqrt((rho1 ** 2).tr() * (rho2 ** 2).tr())
 
 
-def projection_2(rho1: Qobj, rho2: Qobj) -> float:
+def projection_jozsa(rho1: Qobj, rho2: Qobj) -> float:
     """
     Assumes rho1 and rho2 are both positive semi-definite matrices!
+
+    From "R. Jozsa, Fidelity for Mixed Quantum States, J. Mod. Opt. 41, 2315--2323 (1994).
+        DOI: http://doi.org/10.1080/09500349414552171"
+    and "Nielsen, Michael A.; Chuang, Isaac L. (2000). Quantum Computation and Quantum Information.
+        Cambridge University Press. doi:10.1017/CBO9780511976667. ISBN 978-0521635035."
     """
-    assert is_positive_semidefinite(rho1)
-    assert is_positive_semidefinite(rho2), f"{rho2.eigenenergies()}"
+    # assert is_positive_semidefinite(rho1), f"all eigenenergies must be non-negative: {rho2.eigenenergies()}"
+    # assert is_positive_semidefinite(rho2), f"all eigenenergies must be non-negative: {rho2.eigenenergies()}"
     # assert rho1.sqrtm() * rho1.sqrtm().trans() == rho1
-    return (((rho1.sqrtm()) * rho2 * (rho1.sqrtm())).sqrtm()).tr() ** 2
+    return ((rho1.sqrtm() * rho2 * rho1.sqrtm()).sqrtm()).tr() ** 2
 
 
 def is_positive_semidefinite(rho: Qobj) -> bool:
     eigenvalues = rho.eigenenergies()
-    return np.all([eig >=0 for eig in eigenvalues])
+    return np.all([eig >= 0 for eig in eigenvalues])
 
 
+""" Error Stuff """
 
-""" scipy fit stuff """
+
+def multiply_error_matrix(
+        rho1_qobj: Qobj,
+        err1_qobj: Qobj,
+        rho2_qobj: Qobj,
+        err2_qobj: Qobj
+) -> Qobj:
+    assert rho1_qobj.dims == rho2_qobj.dims == err1_qobj.dims == err2_qobj.dims
+
+    assert (np.array_equal(err1_qobj.full(), np.real(err1_qobj.full())) and
+            np.array_equal(err2_qobj.full(), np.real(err2_qobj.full())))
+
+    rho1, rho2 = rho1_qobj.full(), rho2_qobj.full()
+    err1, err2 = np.real(err1_qobj.full()), np.real(err2_qobj.full())
+    value_matrix = np.empty(rho1.shape, dtype=np.complex128)
+    error_matrix = np.empty(rho1.shape, dtype=float)
+    for i in range(rho1.shape[0]):
+        for j in range(rho1.shape[1]):
+            row_val, row_err = rho1[i, :], err1[i, :]
+            col_val, col_err = rho2[:, j], err2[:, j]
+            val_list = row_val * col_val
+            # if any element of row_val or col_val is 0, dividing by this will give NaN. Using `numpy_divide` to
+            # instead give 0 instead of NaN.
+            row_err_reduced = np.divide(row_err, np.abs(row_val), out=np.zeros_like(row_err), where=(row_val != 0))
+            col_err_reduced = np.divide(col_err, np.abs(col_val), out=np.zeros_like(col_err), where=(col_val != 0))
+
+            err_list = np.abs(val_list) * np.sqrt(row_err_reduced ** 2 + col_err_reduced ** 2)
+            err = np.sqrt(np.sum(err_list ** 2))
+
+            error_matrix[i, j] = err
+            value_matrix[i, j] = np.sum(val_list)
+
+    # if not np.allclose(value_matrix, (rho_1_qobj * rho_2_qobj).full()):
+    #     print(f"value_matrix is: \n{value_matrix}")
+    #     print(f"Qobj multiplication: \n{(rho_1_qobj * rho_2_qobj).full()}")
+
+    assert np.allclose(value_matrix, (rho1_qobj * rho2_qobj).full())
+    return Qobj(error_matrix, dims=rho1_qobj.dims)
+
+
+def tr_error(rho_err: Qobj) -> float:
+    return np.sqrt(np.sum(rho_err.diag() ** 2))
+
+
+def fortunato_error(rho1: Qobj, err1: Qobj, rho2: Qobj, err2: Qobj) -> float:
+    numer = (rho1 * rho2).tr()
+    denom = np.sqrt((rho1 ** 2).tr() * (rho2 ** 2).tr())
+    err_numer = tr_error(multiply_error_matrix(rho1, err1, rho2, err2))
+    err_denom_l = tr_error(multiply_error_matrix(rho1, err1, rho1, err1))
+    err_denom_r = tr_error(multiply_error_matrix(rho2, err2, rho2, err2))
+    err_denom_0 = ((rho1 ** 2).tr() * (rho2 ** 2).tr()
+                   * np.sqrt((err_denom_l / (rho1 ** 2).tr()) ** 2 + (err_denom_r / (rho2 ** 2).tr()) ** 2))
+    err_denom = 1 / 2 * err_denom_0 / np.sqrt(denom)
+
+    assert (numer / denom) == projection_fortunato(rho1, rho2)
+    err_final = numer / denom * np.sqrt((err_numer / numer) ** 2 + (err_denom / denom) ** 2)
+    return err_final
+
+
+""" scipy fit stuff (no longer used. May bring it back later) """
 
 
 # sum of absorptive (1) and dispersive (2) Lorentzians
@@ -275,63 +362,3 @@ def calculate_r2(freqs_window, all_spectra_window, popts):
         r2 = 1 - ss_res / ss_tot
         r2s.append(r2)
     return r2s
-
-
-""" Error Stuff """
-
-
-def multiply_error_matrix(
-        rho1_qobj: Qobj,
-        err1_qobj: Qobj,
-        rho2_qobj: Qobj,
-        err2_qobj: Qobj
-) -> Qobj:
-    assert rho1_qobj.shape == rho2_qobj.shape == err1_qobj.shape == err2_qobj.shape
-    assert np.array_equal(err1_qobj, np.real(err1_qobj)) and np.array_equal(err2_qobj, np.real(err2_qobj))
-
-    rho1, rho2 = rho1_qobj.full(), rho2_qobj.full()
-    err1, err2 = np.real(err1_qobj.full()), np.real(err2_qobj.full())
-    value_matrix = np.empty(rho1.shape, dtype=np.complex128)
-    error_matrix = np.empty(rho1.shape, dtype=float)
-    for i in range(rho1.shape[0]):
-        for j in range(rho1.shape[1]):
-            row_val, row_err = rho1[i, :], err1[i, :]
-            col_val, col_err = rho2[:, j], err2[:, j]
-            val_list = row_val * col_val
-            # if any element of row_val or col_val is 0, dividing by this will give NaN. Using `numpy_divide` to
-            # instead give 0 instead of NaN.
-            row_err_reduced = np.divide(row_err, np.abs(row_val), out=np.zeros_like(row_err), where=(row_val != 0))
-            col_err_reduced = np.divide(col_err, np.abs(col_val), out=np.zeros_like(col_err), where=(col_val != 0))
-
-            err_list = np.abs(val_list) * np.sqrt(row_err_reduced ** 2 + col_err_reduced ** 2)
-            err = np.sqrt(np.sum(err_list ** 2))
-
-            error_matrix[i, j] = err
-            value_matrix[i, j] = np.sum(val_list)
-
-    # if not np.allclose(value_matrix, (rho_1_qobj * rho_2_qobj).full()):
-    #     print(f"value_matrix is: \n{value_matrix}")
-    #     print(f"Qobj multiplication: \n{(rho_1_qobj * rho_2_qobj).full()}")
-
-    assert np.allclose(value_matrix, (rho1_qobj * rho2_qobj).full())
-    return error_matrix
-
-
-def tr_error(rho_err: Qobj) -> float:
-    return np.sqrt(np.sum(np.diag(rho_err) ** 2))
-
-
-def fortunato_error(rho1: Qobj, err1: Qobj, rho2: Qobj, err2: Qobj) -> float:
-    numer = (rho1 * rho2).tr()
-    denom = np.sqrt((rho1 ** 2).tr() * (rho2 ** 2).tr())
-    err_numer = tr_error(multiply_error_matrix(rho1, err1, rho2, err2))
-    err_denom_l = tr_error(multiply_error_matrix(rho1, err1, rho1, err1))
-    err_denom_r = tr_error(multiply_error_matrix(rho2, err2, rho2, err2))
-    err_denom_0 = ((rho1 ** 2).tr() * (rho2 ** 2).tr()
-                   * np.sqrt((err_denom_l / (rho1 ** 2).tr()) ** 2 + (err_denom_r / (rho2 ** 2).tr()) ** 2))
-    err_denom = 1/2 * err_denom_0 / np.sqrt(denom)
-
-    assert (numer / denom) == projection_fortunato(rho1, rho2)
-    err_final = numer / denom * np.sqrt((err_numer / numer) ** 2 + (err_denom / denom) ** 2)
-    return err_final
-
