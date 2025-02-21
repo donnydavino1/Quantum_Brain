@@ -5,8 +5,8 @@ from qutip import Qobj
 from scipy import integrate
 from scipy.optimize import curve_fit
 
-import operators as op
-from coeff_groups_class import CoefficientGroups, clean_dm
+import tomography.operators as op
+from helpers.coeff_groups_class import CoefficientGroups, clean_dm
 
 
 """ PULSEE imports """

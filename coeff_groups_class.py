@@ -26,31 +26,33 @@ class CoefficientGroups:
 
     def add_coefficient(self, operator: qt.Qobj, c: float, atom: str):
         for group in self.data:
-            if np.array_equal(operator, group[0]):
+            if operator == group[0]:
                 group.append((c, atom))
                 return
-            elif np.array_equal(-operator, group[0]):
+            elif -operator == group[0]:
                 group.append((-c, atom))
                 return
         self.data.append([operator, (c, atom)])
 
-    def reconstruct_rho(self, abs_trace=True, positive_diag=False, add_identity=False) -> qt.Qobj:
+    def reconstruct_rho(self, abs_trace=True, positive_diag=False, add_identity=True, exclude_i=None) -> qt.Qobj:
         """
         Given a 'coefficient groups', construct a density matrix.
-        Could play around setting abs_trace to True/False and seeing which gives
-        us better projection & fidelity values.
+        The parameters `abs_trace`, `positive_diag`, and `add_identity` are passed on to `clean_dm()` and these
+        parameters are explained in more detail in the docstring of `clean_dm()`.
+
+
         """
+        # Make sure the groups cover all 15 coefficients required to reconstruct a density matrix
         assert len(self.data) == 15, "number of groups should be 15!"
 
         rho = qt.Qobj(np.zeros(self.data[0][0].shape), dims=self.data[0][0].dims)
         for group in self.data:
             coefficients = [c for (c, atom) in group[1:]]
-            # TODO: implement error propagation
             rho += group[0] * np.mean(coefficients)
         rho = clean_dm(rho, abs_trace=abs_trace, positive_diag=positive_diag, add_identity=add_identity)
-        return qt.Qobj(rho)
+        return rho
 
-    def get_error(self, abs_trace=True, positive_diag=False, add_identity=False) -> qt.Qobj:
+    def get_error(self, abs_trace=True, positive_diag=False, add_identity=True) -> qt.Qobj:
         groups_averaged = []
         for group in self.data:
             coefficients = [c for (c, atom) in group[1:]]
@@ -97,7 +99,7 @@ def clean_dm(
 ) -> qt.Qobj | tuple[qt.Qobj, qt.Qobj]:
     """
     The final processing step to 'clean up' the density matrix (rho) from tomography.
-    The behavior of this function varies widely depending on the value of the parameters,
+    The behavior of this function varies widely depending on the given parameters,
     so pay careful attention to their values.
 
     The cleanup process is tricky since the resulting density matrix from tomography contains negative values
@@ -105,15 +107,18 @@ def clean_dm(
     (This is because the tomography's basis product operators all have trace 0)
 
     2024 December: Added the option "add_identity" (which was always True previously). If this is set to false,
-    it does not add any identity to the density matrix (and thus doesn't try to get rid of the tail).
+    it does not add any identity to the density matrix (and thus doesn't try to get rid of the "tail" of the diagonal).
     This is useful when I'm trying to compare the raw measured density matrix from the tomography to the theoretical
     density matrix with a tail.
+
     :param rho:
         The density matrix to clean.
     :param abs_trace:
-        Divides the diagonal by the "absolute trace". I've defined the "absolute trace" as the sum of the absolute of the diagonal elements.
+        Divides the diagonal by the "absolute trace".
+        I've defined the "absolute trace" as the sum of the absolute of the diagonal elements.
         Allows the negative values in the diagonal.
-        Additionally, adds identity to the diagonal depending on the `add_identity` parameter (further details in the `add_identity` docstring).
+        Additionally, adds identity to the diagonal depending on the `add_identity` parameter
+        (further details in the `add_identity` docstring).
 
         Usually set to True, and this is the 'default' behavior of this function. However, the default value of the
         parameter is set to False for backwards compatibility (in the old notebook files where I used to call
@@ -124,7 +129,7 @@ def clean_dm(
     :param positive_diag:
         If True, forces all the diagonal elements to be non-negative by subtracting the most negative diagonal
         element to all the diagonal elements.
-        Since all diagonal elements are non-negative, we no longer have to worry about trace vs absolute trace,
+        Since all diagonal elements are now non-negative, we no longer have to worry about trace vs absolute trace,
         and can reliably use regular trace for normalization.
     :param add_identity:
         Only relevant if `abs_trace` is True. This value was always True by default in the past.
@@ -159,7 +164,6 @@ def clean_dm(
         if add_identity:
             rho_reduced = rho_reduced + op.IDENTITY / 6
             # force the sum of the diagonal to be 1 again
-
             rho_reduced = rho_reduced / np.sum(rho_reduced.diag())
             error_multiplier = error_multiplier / np.sum(rho_reduced.diag())
 

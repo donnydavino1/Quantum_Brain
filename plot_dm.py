@@ -21,8 +21,10 @@ def plot_complex_density_matrix(
         label_size: int = 16,
         label_qubit: bool = True,
         view_angle: tuple[float] = (45, -15),
-        zlim: tuple[float, float] | None = None,
-        add_shade= False
+        zlim: tuple[float, float] | str = None,
+        add_shade= False,
+        hide_z_axis=True,
+        show_grid=False
 ) -> tuple[plt.Figure, plt.Axes]:
     """
     Generates a 3D histogram displaying the amplitude and phase (with colors)
@@ -86,7 +88,7 @@ def plot_complex_density_matrix(
          A tuple of (azimuthal, elevation) viewing angles for the 3D plot.
          Default is (45 deg, -15 deg)
 
-    zlim : (int, int)
+    zlim : (float, float)
         The z axis limits of the plot.
 
     Action
@@ -106,9 +108,8 @@ def plot_complex_density_matrix(
     if many_spin_indexing is None:
         many_spin_indexing = dm.dims[0]
 
-    #assert np.array_equal(np.array(dm), dm.full())
-    #dm = np.array(dm)
-    dm=dm.full()
+    # assert np.array_equal(np.array(dm), dm.full())
+    dm = dm.full()
     n = dm.size
 
     # Set width of the vertical bars
@@ -121,9 +122,10 @@ def plot_complex_density_matrix(
     ypos = ypos.T.flatten() - dy / 2
     zpos = np.zeros(n)
 
-    # make small numbers real, to avoid random colors
-    #idx, = np.where(abs(dm_data) < 0.001)
-    #dm_data[idx] = abs(dm_data[idx])
+    """ Got rid of this feature! Annoying that it destroys the phase of small values"""
+    # # make small numbers real, to avoid random colors
+    # idx, = np.where(abs(dm_data) < 0.001)
+    # dm_data[idx] = abs(dm_data[idx])
 
     if phase_limits:  # check that limits is a list type
         phase_min = phase_limits[0]
@@ -144,7 +146,10 @@ def plot_complex_density_matrix(
         fig.set_size_inches(fig_size)
     ax = fig.add_subplot(111, projection="3d")
 
-    if zlim is not None:
+    if zlim == "auto":
+        pass
+    elif zlim is not None:
+        assert isinstance(zlim, tuple)
         ax.set_zlim(zlim)
     elif label_qubit:  # To display as figure in a paper.
         ax.set_zlim(0, 1)
@@ -165,15 +170,17 @@ def plot_complex_density_matrix(
 
     """ Change I'm making for Qbrain publication """
     # turn off grid
-    ax.grid(False)
+    if not show_grid:
+        ax.grid(False)
 
     # turn off z-axis
-    ax.zaxis.set_visible(False)
-    ax.set_zticks([])
-    ax.zaxis.set_tick_params(size=0)  # Removes tick labels
-    ax.zaxis.line.set_color((1.0, 1.0, 1.0, 0.0))  # Make axis line invisible
-    ax.zaxis.pane.fill = False  # Disable z pane
-    ax.zaxis.pane.set_edgecolor((1.0, 1.0, 1.0, 0.0))  # Edge color invisible
+    if hide_z_axis:
+        ax.zaxis.set_visible(False)
+        ax.set_zticks([])
+        ax.zaxis.set_tick_params(size=0)  # Removes tick labels
+        ax.zaxis.line.set_color((1.0, 1.0, 1.0, 0.0))  # Make axis line invisible
+        ax.zaxis.pane.fill = False  # Disable z pane
+        ax.zaxis.pane.set_edgecolor((1.0, 1.0, 1.0, 0.0))  # Edge color invisible
 
     # turn off all the 'panes'
     ax.xaxis.set_pane_color((1.0, 1.0, 1.0, 0.0))
@@ -194,7 +201,7 @@ def plot_complex_density_matrix(
         cb.set_label("Phase")
 
     if save_to != "":
-        plt.savefig(save_to, dpi=fig_dpi, bbox_inches='tight')
+        plt.savefig(save_to, dpi=fig_dpi, bbox_inches='tight', transparent=True)
 
     if show:
         plt.show()

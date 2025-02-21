@@ -1,4 +1,4 @@
-import operators as op
+import tomography.operators as op
 import numpy as np
 import qutip as qt
 

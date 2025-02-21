@@ -1,5 +1,5 @@
-import qutip as qt
 import numpy as np
+import qutip as qt
 
 pi = np.pi
 
@@ -31,7 +31,6 @@ IzSx = qt.tensor(iz, sx)
 IzSy = qt.tensor(iz, sy)
 IzSz = qt.tensor(iz, sz)
 
-
 """ 4x4 Density Matrix States """
 RHO_1000 = (Iz + Sz + 2 * IzSz).unit()
 RHO_0100 = (Iz - Sz - 2 * IzSz).unit()
@@ -44,12 +43,10 @@ CLEAN_0100 = (RHO_0100 + IDENTITY / 6).unit()
 CLEAN_0010 = (RHO_0010 + IDENTITY / 6).unit()
 CLEAN_0001 = (RHO_0001 + IDENTITY / 6).unit()
 
-# Donny's normalized by hands versions of the above
-RHO_1000_normalized = (1/2*Iz + 1/2*Sz + 1*IzSz)
-CLEAN_1000_normalized = (1/2*Iz + 1/2*Sz + 1*IzSz+1/4*IDENTITY)
-Thermal_normalized = (1/2*Iz + 1/2*Sz+1/4*IDENTITY)
 
 """ Operators """
+
+
 # Rotation Operators
 
 
@@ -94,16 +91,15 @@ def U_J(t, J):
                 np.exp(-1j * pi * J * t / 2)]
     return qt.Qobj(np.diag(diagonal), dims=[[2, 2], [2, 2]])
 
+rotation_dict = {"Ix": Rx_I, "Iy": Ry_I, "Iz": Rz_I, "Sx": Rx_S, "Sy": Ry_S, "Sz": Rz_S}
+
 
 # J coupling with wait time t = 1/(2J). Levitt pg 398
 UJ = qt.Qobj((-1j * np.pi * IzSz)).expm()
 
-CNOT_Unphased = Rx_S(np.pi / 2) * UJ * Ry_S(np.pi / 2)
-
 CNOT = Rx_S(np.pi / 2) * UJ * Ry_S(np.pi / 2)
-# cnot_donny = Rx_S(pi / 2) * UJ * Ry_S(pi / 2)
-
 CNOT_Phased = Rz_I(np.pi / 2) * Rz_S(-np.pi / 2) * CNOT
+# cnot_donny = Rx_S(pi / 2) * UJ * Ry_S(pi / 2)
 
 # Hadamard on the first spin. Note that the old version had a global magnitude multiplied to it! Idk why I did that.
 # H_1 = Rx_I(pi) * Ry_I(pi / 2) * 1j * np.sqrt(2)
@@ -112,12 +108,19 @@ H_1 = Rx_I(pi) * Ry_I(pi / 2)
 # again, the old version had a multiplier at the end. This ruins the normalization of the rho's.
 # I don't know why I did that. Fixed with the new line.
 # T = qt.Qobj(Rx_I(pi/2) * Ry_I(pi/4) * Rx_I(-pi/2) * np.exp(1j * pi/8))
-T = qt.Qobj(Rx_I(pi/2) * Ry_I(pi/4) * Rx_I(-pi/2))
+T = qt.Qobj(Rx_I(pi / 2) * Ry_I(pi / 4) * Rx_I(-pi / 2))
 
 # t_array = np.array([[1, 0],[]])
 
+""" Bell States """
+
+BELL_00 = CNOT_Phased * H_1 * CLEAN_1000 * H_1.dag() * CNOT_Phased.dag()
+BELL_01 = CNOT_Phased * H_1 * CLEAN_0100 * H_1.dag() * CNOT_Phased.dag()
+BELL_10 = CNOT_Phased * H_1 * CLEAN_0010 * H_1.dag() * CNOT_Phased.dag()
+BELL_11 = CNOT_Phased * H_1 * CLEAN_0001 * H_1.dag() * CNOT_Phased.dag()
+
 """ Product Operators for Tomography """
-# Construct the product operators that correspond to each spectrum. 
+# Construct the product operators that correspond to each spectrum.
 # First element operator corresponds to the sum of the peaks and the second element to the difference
 # From table 4.1 in Jon Vandermause's thesis, and Leskowitz's paper
 ii_real_ops_1 = [Ix, 2 * IxSz]
@@ -189,6 +192,8 @@ product_operators_2 = [ii_real_ops_2, ii_imag_ops_2,
 
 product_operators = product_operators_1 + product_operators_2
 
+
+""" Helper Functions """
 
 def already_exists(op_new, lst):
     for op_old in lst:
