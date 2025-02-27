@@ -5,70 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6329242-ed41-47e7-9e09-2c12ed698fbe" name="Changes" comment="Corrections on the Pulse Programs. On _2_Y2 readout and shortening CNOT_Phased.">
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0001/0001CNP_ns1_109.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0001CNP/0001CNP_ns1_109.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0001CNP/0001CNP_ns1_249.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0010/0010CNP_ns1_39.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0010BellUnphased_ns1_281/0010BellUnphased_ns1_281.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0010CNP/0001CNPA_342_old.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0010CNP/0010CNP_ns1_95.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0100/0100_ns1_11v2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0100/0100_ns1_25.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0100CNP/0100CNP_ns1_81.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/1000/1000_ns1_11.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/1000CNP/1000CNP_ns1_67.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0001CNP_new.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0001_CNP_meas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0001_meas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0010CNP_new.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0010_CNP_meas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0010_meas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0100CNP_new.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0100_CNP_meas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0100_meas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/1000CNP_new.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/1000_CNP_meas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/1000_meas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/phase_legend.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_0001CNP_ns1_109.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_bar_plot_6_by_5p5.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_summary.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_summary_CNP.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CR2/CR2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CR3/CR3.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DB2/DB2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DB3/DB3.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR1/DCR1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR2/DCR2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR3/DCR3.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR3/DCR3_New.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/grover/0010BellUnphased_ns1_281.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/singlet_0ms/0010BellUnphased_ns1_281.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/singlet_100ms/0010BellUnphased_ns1_281.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/singlet_200ms/0010BellUnphased_ns1_281.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/singlet_300ms/0010BellUnphased_ns1_281.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/My_Changes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_356.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/global_constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/tomography_helper_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/0010BellUnphased_ns1_281/0010BellUnphasedV2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CR2/CR2v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CR2/result_DB3.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CR2/result_DB3_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CR3/CR3v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CR3/result_DB3.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CR3/result_DB3_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DB2/DB2v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DB2/result_DB3.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DB2/result_DB3_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DB3/DB3v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DB3/result_DB3.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DB3/result_DB3_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR1/DCR1v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR1/result_DB3.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR1/result_DB3_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR2/DCR2v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR2/result_DB3.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR2/result_DB3_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR3/DCR3v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR3/result_DB3.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR3/result_DB3_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/inputs/0001_new.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/inputs/0100_new.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/inputs/1000_new.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/inputs/result_0100_ns1_25.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/inputs/result_0100_ns1_25_error.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_416.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/Fourier_Transform_PPS.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_3/Fouriser_Transform_V2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_8/Reaction Rates.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Quantum_Brain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Quantum_Brain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CN/0001CN_ns1_77.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CN/0001CN_ns1_77.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CN/result_0001CN_ns1_77.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/0001CN/result_0001CN_ns1_77_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_0001CNP_ns1_109_error.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/1000/1000_ns1_63.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/1000/1000_ns1_63.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/1000/result_1000_ns1_63.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/1000/result_1000_ns1_11.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/1000/result_1000_ns1_63_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/1000/result_1000_ns1_11_error.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Bell/0001BPA_155.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2024_12_17-18/Bell/0001BPA_155.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/1000_ns1_63.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/1000_ns1_63.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/V2_Deutsch_algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Thesis_Figure_Making/Chapter_6/V2_Deutsch_algorithm.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coeff_groups_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/coeff_groups_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/operators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/operators_3spin_new.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_dm.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_dm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0001CNP_new.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0001CNP_new.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0001_CNP_meas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0001_meas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0010CNP_new.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0010CNP_new.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0010_CNP_meas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0010_meas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0100CNP_new.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0100CNP_new.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0100_CNP_meas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/0100_meas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/1000CNP_new.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/1000CNP_new.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/1000_CNP_meas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/1000_meas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/phase_legend.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_0001CNP_ns1_109.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_0001CNP_ns1_109.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_0001CNP_ns1_109_error.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_0001CNP_ns1_109_error.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_bar_plot_6_by_5p5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_summary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_summary_CNP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIT_Data/2025_2_19/CNP/result_summary_CNP.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MIT_Data/2025_2_19/DCR3/DCR3_New.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_356.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/T1_and_T2_Analysis/T2_analysis_356.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phase.py" beforeDir="false" afterPath="$PROJECT_DIR$/phase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temporal_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/temporal_average.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomography_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tomography_helper_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +87,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/donnydavino1/Quantum_Brain.git&quot;,
-    &quot;accountId&quot;: &quot;e851cd0c-48a2-497e-bfb4-4616c7a65a1b&quot;
+    &quot;accountId&quot;: &quot;5638d4fa-515b-458e-896a-104e11f36bed&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -112,32 +104,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.temporal_average.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/donny/Documents/GitHub/Quantum_Brain/MIT_Data/2025_2_19/DCR3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.temporal_average.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/donny/Documents/GitHub/Quantum_Brain/T1_and_T2_Analysis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Jupyter&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": []
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2025_2_19\DCR3" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2025_2_19" />
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\T1_and_T2_Analysis" />
-      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2025_2_19\0010CNP" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2025_2_19\0010BellUnphased_ns1_281" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2025_2_19\CR2" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2025_2_19\CR3" />
+      <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2025_2_19\DB2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\donny\Documents\GitHub\Quantum_Brain\MIT_Data\2025_2_19\1000" />
@@ -150,8 +145,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17890.14" />
-        <option value="bundled-python-sdk-5b207ade9991-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17890.14" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
+        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
       </set>
     </attachedChunks>
   </component>
@@ -215,6 +210,9 @@
       <workItem from="1740163626762" duration="929000" />
       <workItem from="1740165650138" duration="990000" />
       <workItem from="1740167139009" duration="4892000" />
+      <workItem from="1740249006953" duration="9445000" />
+      <workItem from="1740365136625" duration="9037000" />
+      <workItem from="1740684890590" duration="1431000" />
     </task>
     <task id="LOCAL-00001" summary="New files, especially for QT and understanding phase cycling">
       <option name="closed" value="true" />
@@ -342,6 +340,10 @@
           <url>notebook://C:/Users/donny/Documents/GitHub/Quantum_Brain/MIT_Data/2025_2_19/singlet_0ms/0010BellUnphased_ns1_281.ipynb</url>
           <line>137</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/temporal_average.py</url>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
